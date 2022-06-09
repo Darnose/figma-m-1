@@ -1,0 +1,507 @@
+/* ------ Media Queries ------ */
+
+/* 1200-1440px */
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 1140px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .logo {
+        margin: 0;
+    }
+    .basket {
+        margin-right: 0;
+    }
+    .right-side {
+        margin-right: auto;
+        margin-left: 60px;
+    }
+    .left-side {
+        width: 390px;
+        margin: 0;
+    }
+    .images {
+        margin: 0;
+    }
+    .course {
+        width: 30%;
+    }
+    .course img {
+        width: 100%;
+    }
+    .contact {
+        justify-content: space-between;
+    }
+    .contact img {
+        margin-left: -33px;
+        width: 70%;
+        height: 70%;
+    }
+    .recommend {
+        padding: 80px 35px ;
+    }
+    .training {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .subject {
+        padding-right: 20px;
+    }
+    .picture {
+        margin: 0;
+    }
+    .about {
+        margin-left: 60px;
+    }
+    .about__text {
+        width: 480px;
+    }
+    .coaching {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .lesson {
+        width: 30%;
+    }
+    .lesson img {
+        width: 100%;    
+    }
+    .pattern {
+        padding-right: 35px;
+    }
+    .platform {
+        margin-left: 0;
+    }
+    .template {
+        margin-left: 120px;
+    }
+    .follow {
+        margin-left: 180px;
+    }
+    .articles {
+        padding-top: 100px;
+    } 
+    .pattern__title {
+        width: 100%;
+    }
+    .project::after {
+        top: 13.5%;
+        left: 44.4%;
+    }
+}
+
+/* 991-1200px */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 940px;
+    }
+    .header {
+        padding-bottom: 70px;
+    }   
+    .main {
+        padding-top: 110px;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .left-side {
+        text-align: center;
+        width: 100%;
+    }
+    .feature::after {
+        top: 5.5%;
+        left: 42%;
+    }
+    .right-side {
+        margin-left: auto;
+        margin-top: 120px;
+    }
+    .courses {
+        padding: 90px 0;
+    }
+    .route {
+        padding: 18px 35px 25px 24px;
+    }
+    .route__prise {
+        font-size: 19px;
+    }
+    .contact img {
+        width: 60%;
+        height: 60%;
+    }
+    .recommend {
+        padding: 43px 0px 43px 40px;
+    }
+    .recommend::after {
+        left: 10%;
+    }
+    .recommend__title {
+        margin-bottom: 50px;
+    }
+    .recommend__text {
+        margin-bottom: 35px;
+        font-size: 19px;
+    }
+    .workshops {
+        padding: 100px 0;
+    }
+    .subject {
+        width: 27%;
+    }
+    .subject__text {
+        width: 100%;
+    }
+    .slider {
+        padding: 65px 0;
+    }
+    .slider__text {
+        width: 100%;    
+    }
+    .division {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about {
+        margin-top: 90px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .about::after {
+        top: 22%;
+        left: 33%;  
+    }
+    .project::after {
+        top: 13.5%;
+        left: 43.5%;
+    }
+}
+
+/* 767-991px */
+@media screen and (max-width: 991px) {
+    .container {
+        width: 700px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .header {
+        padding-bottom: 40px;
+    }
+    .main {
+        padding-top: 100px;
+    }
+    .burger {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .course {
+        width: 70%;
+    }
+    .course:not(:last-child) {
+        margin-bottom: 45px;
+    }
+    .training {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subject {
+        width: 70%;
+    }
+    .subject:not(:last-child) {
+        margin-bottom: 45px;
+    }
+    .coaching {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lesson {
+        width: 70%;
+    }
+    .lesson:not(:last-child) {
+        margin-bottom: 45px;
+    }
+    .slider__text {
+        font-size: 25px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .recommend {
+        text-align: center;
+    }
+    .review::after {
+        transform: translate(-50% , -50%);
+        left: 50%;
+        top: 15%;
+    }
+    .recommend::after {
+        transform: translate(-50% , -50%);
+        top: 30%;
+        left: 50%;
+    }
+    .workshop::after {
+        transform: translate(-50% , -50%);
+        left: 50%;
+        top: 19%;
+    }
+    .project::after {
+        transform: translate(-50% , -50%);
+        left: 50%;
+        top: 7%;
+    }
+    .feature::after {
+        transform: translate(-50% , -50%);
+        left: 50%;
+    }
+    .about::after {
+        top: 21%;
+        transform: translate(-50% , -50%);
+        left: 50%;
+    }
+    .template {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .platform {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .follow {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .network {
+        flex-direction: column;
+        align-items: center;
+    }
+    .network__circle:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+/* 575-767px */
+@media screen and (max-width: 767px) {
+    .container {
+        width: 520px;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .menu {
+        order: -1;
+    }
+    .right-side {
+        margin-top: 70px;
+    }
+    .image {
+        display: none;
+    }
+    .mobile-1 {
+        display: block;
+        width: 100%;
+    }
+    .mobile-2 {
+        display: block;
+        width: 100%;
+    }
+    .teaching {
+        padding: 70px 0 60px;
+    }
+    .about {
+        margin-top: 60px;
+    }
+    .review {
+        width: 100%;
+    }
+    .articles {
+        padding-top: 70px;
+    }
+    .workshop {
+        width: 100%;
+        text-align: center;
+    }
+    .recommend {
+        padding-left: 0;
+    }
+    .workshop__text {
+        font-size: 19px;
+    }
+    .project__text {
+        text-align: center;
+        width: 100%;
+        font-size: 19px;
+    }
+    .platform {
+        margin-left: 0;
+    }
+    .follow {
+        margin-right: 0;
+    }
+    .project::after {
+        top: 5.5%;
+    }
+}
+
+/* 320-575px */
+@media screen and (max-width: 575px) {
+    .body {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+    }
+    .sticky-scroll {
+        margin-top: 74px;
+    }
+    .navigation {
+        padding: 15px 0;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .main {
+        padding-top: 70px;
+    }
+    .courses {
+        padding: 40px 0 70px;
+    }
+    .course {
+        width: 90%;
+    }
+    .info__title {
+        margin-top: 40px;
+    }
+    .review__title {
+        margin-bottom: 40px;
+    }
+    .review__text {
+        font-size: 16px;
+    }
+    .about__text {
+        width: 100%;
+    }
+    .guide {
+        padding: 260px 0 90px;
+    }
+    .workshop::after {
+        top: 13%;
+    }
+    .contact img {
+        width: 90%;
+        height: 90%;
+    }
+    .workshops {
+        padding: 60px 0;
+    }
+    .slider__text {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .subject {
+        width: 80%;
+    }
+    .lesson {
+        width: 90%;
+    }
+    .mail__title {
+        width: 90%;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services {
+        letter-spacing: 1px;
+    }
+    .platform {
+        margin-left: auto;
+    }
+    .platform__text {
+        font-size: 14px;
+    }
+    .template__text {
+        font-size: 15px;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .form__input {
+        width: 75%;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .follow {
+        margin-top: 20px;
+        margin-right: auto;
+    }
+    .follow__text {
+        font-size: 15px;
+        text-align: center;
+    }
+    .network {
+        flex-direction: row;
+    }
+    .network__circle:not(:last-child) {
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+    .recommend__title {
+        margin-bottom: 35px;
+    }
+    .recommend::after {
+        top: 31%;
+    }
+    .about::after {
+        top: 18%;
+    }
+    .review::after {
+        top: 12%;
+    }
+    .workshop::after {
+        top: 16%;
+    }
+    .copyright {
+        margin-left: auto;
+    }
+    .copyright__text:not(:last-child) {
+        margin-right: auto;
+    }
+}
