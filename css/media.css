@@ -331,9 +331,6 @@
     .follow {
         margin-right: 0;
     }
-    .line-mid::after {
-        bottom: -15%;
-    }
 }
 
 /* 320-575px */
