@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     color: #F6F6F8;
     background: #23233B;
+	overflow-x: hidden;
 }
 
 .container {
