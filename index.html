@@ -22,102 +22,105 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <div class="stock">
-        <div class="container">
-            <p class="stock__text">
-                One week only—50% off all courses with code 50OFF at checkout
-            </p>
-        </div>
-    </div>
-    <div class="navigation">
-        <div class="container">
-            <div class="wrap">
-                <div class="burger">
-                    <button type="button" class="burger__btn">
-                        <div class="line"></div>
-                    </button>
-                </div>
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <nav>
-                    <ul class="menu">
-                        <li class="menu__item menu__item_17">
-                            <a href="#">
-                                Courses
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item_18">
-                            <a href="#">
-                                Free Workshops
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item_18">
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item_17">
-                            <a href="#">
-                                About
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item_18">
-                            <a href="#">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="basket">
-                    <button type="button" class="basket__btn">
-                        <img src="img/backet.svg" alt="backet">
-                    </button>
-                </div>
+    <header id="header" class="header">
+        <div class="stock">
+            <div class="container">
+                <p class="stock__text">
+                    One week only—50% off all courses with code 50OFF<br> at checkout
+                </p>
             </div>
         </div>
-    </div>
-    <header id="header" class="header">
-        <div class="main">
+        <div class="navigation">
             <div class="container">
-                <div class="info">
-                    <div class="left-side">
-                        <p class="feature">
-                            Featured Course
-                        </p>
-                        <h1 class="info__title">
-                            Run your own online learning platform
-                        </h1>
-                        <p class="info__text">
-                            A deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.
-                        </p>
-                        <p class="name">
-                            Kathryn Murphy
-                        </p>
-                        <button type="button" class="info__btn btn">
-                            Learn More
+                <div class="wrap">
+                    <div class="burger">
+                        <button type="button" class="burger__btn">
+                            <div class="line"></div>
                         </button>
                     </div>
-                    <div class="right-side">
-                        <div class="image">
-                            <img src="img/IMAGEwave.png" alt="wave" class="wave-1">
-                            <div class="petal-1"></div>
-                            <div class="petal-2"></div>
-                            <div class="petal-3"></div>
-                            <img src="img/main.png" alt="main" class="petal">
-                        </div>
-                        <img src="img/Framemobile1.png" alt="#" class="mobile-1">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu__item menu__item_17">
+                                <a href="#">
+                                    Courses
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_18">
+                                <a href="#">
+                                    Free Workshops
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_18">
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_17">
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_18">
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="basket">
+                        <button type="button" class="basket__btn">
+                            <img src="img/backet.svg" alt="backet">
+                            <span class="basket__ballon">
+                                0
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <section id="main" class="main">
+        <div class="container">
+            <div class="info">
+                <div class="left-side">
+                    <p class="feature line-left">
+                        Featured Course
+                    </p>
+                    <h1 class="info__title">
+                        Run your own online learning platform
+                    </h1>
+                    <p class="info__text">
+                        A deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.
+                    </p>
+                    <p class="name">
+                        Kathryn Murphy
+                    </p>
+                    <button type="button" class="info__btn btn">
+                        Learn More
+                    </button>
+                </div>
+                <div class="right-side">
+                    <div class="image">
+                        <img src="img/wave.svg" alt="wave" class="wave-1">
+                        <div class="petal-1"></div>
+                        <div class="petal-2"></div>
+                        <div class="petal-3"></div>
+                        <img src="img/main.png" alt="main" class="petal">
+                    </div>
+                    <img src="img/Framemobile1.png" alt="#" class="mobile-1">
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="courses" class="courses">
         <div class="container">
             <div class="review">
-                <h2 class="review__title">
+                <h2 class="review__title line-mid">
                     Featured Courses
                 </h2>
                 <p class="review__text">
@@ -129,7 +132,7 @@
             </div>
             <div class="images">
                 <div class="course">
-                    <img src="img/course1.png" alt="course-1">
+                    <img src="img/course1.jpg" alt="course-1">
                     <div class="route">
                         <h3 class="route__title">
                             How to Increase Your Engagement on Instagram
@@ -148,7 +151,7 @@
                     </div>
                 </div>
                 <div class="course">
-                    <img src="img/course2.png" alt="course-2">
+                    <img src="img/course2.jpg" alt="course-2">
                     <div class="route">
                         <h3 class="route__title">
                             Business 101: Setting up Your Taxes
@@ -170,7 +173,7 @@
                     </div>
                 </div>
                 <div class="course">
-                    <img src="img/course3.png" alt="course-3">
+                    <img src="img/course3.jpg" alt="course-3">
                     <div class="route">
                         <h3 class="route__title">
                             iPhone Photography: Tips, Tricks and Best Practices
@@ -197,9 +200,9 @@
     <section id="contact-us" class="contact-us">
         <div class="container">
             <div class="contact">
-                <img src="img/nigga.png" alt="nigga">
+                <img src="img/nigga.jpg" alt="nigga">
                 <div class="recommend">
-                    <h2 class="recommend__title">
+                    <h2 class="recommend__title line-left">
                         Get personalized learning recommendations
                     </h2>
                     <p class="recommend__text">
@@ -215,7 +218,7 @@
     <section id="workshops" class="workshops">
         <div class="container">
             <div class="workshop">
-                <h2 class="workshop__title">
+                <h2 class="workshop__title line-mid">
                     Upcoming Free Workshops
                 </h2>
                 <p class="workshop__text">
@@ -306,7 +309,7 @@
                 <div class="division">
                     <div class="picture">
                         <div class="image">
-                            <img src="img/IMAGEwave.png" alt="wave" class="wave-2">
+                            <img src="img/wave.svg" alt="wave" class="wave-2">
                             <div class="petal-4"></div>
                             <div class="petal-5"></div>
                             <div class="petal-6"></div>
@@ -315,7 +318,7 @@
                         <img src="img/Framemobile2.png" alt="#" class="mobile-2">
                     </div>
                     <div class="about">
-                        <h2 class="about__title">
+                        <h2 class="about__title line-left">
                             A Passion for Teaching
                         </h2>
                         <p class="about__text">
@@ -332,7 +335,7 @@
     <section id="articles" class="articles">
         <div class="container">
             <div class="project">
-                <h2 class="project__title">
+                <h2 class="project__title line-mid">
                     Recent Articles
                 </h2>
                 <p class="project__text">
@@ -344,7 +347,7 @@
             </div>
             <div class="coaching">
                 <div class="lesson">
-                    <img src="img/IMAGEphone.png" alt="tik">
+                    <img src="img/phone.jpg" alt="tik">
                     <div class="pattern">
                         <time datetime="2021-02-08" class="pattern__date">February 8, 2021</time>
                         <h3 class="pattern__title">
@@ -356,7 +359,7 @@
                     </div>
                 </div>
                 <div class="lesson">
-                    <img src="img/IMAGEphone.png" alt="tik">
+                    <img src="img/phone.jpg" alt="tik">
                     <div class="pattern">
                         <time datetime="2021-02-08" class="pattern__date">February 8, 2021</time>
                         <h3 class="pattern__title">
@@ -368,7 +371,7 @@
                     </div>
                 </div>
                 <div class="lesson">
-                    <img src="img/IMAGEcamera.png" alt="camera">
+                    <img src="img/course3.jpg" alt="camera">
                     <div class="pattern">
                         <time datetime="2021-02-08" class="pattern__date">February 8, 2021</time>
                         <h3 class="pattern__title">
