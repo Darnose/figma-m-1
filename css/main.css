@@ -59,16 +59,18 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .btn {
+    font-family: 'Source Sans Pro', sans-serif;
     background: #57D9A6;
     border-radius: 4px;
     color: #1C1C33;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 27px;
     letter-spacing: 1px;
     border: none;
     align-items: center;
     text-transform: uppercase;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -76,12 +78,28 @@ h1, h2, h3, h4, h5, h6 {
     background: #2c8d66;
 }
 
-/* ------ First section ------ */
-
-.header {
-    padding-bottom: 115px;
-    background: #23233B;
+.line-left::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: #57D9A6;
+    position: absolute;
+    bottom: -38%;
+    left: 0%;
 }
+
+.line-mid::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: #57D9A6;
+    position: absolute;
+    bottom: -38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------ First section ------ */
 
 .stock {
     text-align: center;
@@ -95,8 +113,12 @@ h1, h2, h3, h4, h5, h6 {
     color:#1C1C33;
 }
 
+.stock br {
+    display: none;
+}
+
 .navigation {
-    padding: 30px 0 31px;
+    padding: 31px 0 30px;
     background: #1C1C33;
     color: #F6F6F8;
     display: flex;
@@ -109,10 +131,6 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     z-index: 999;
-}
-
-.sticky-scroll {
-    margin-top: 105px;
 }
 
 .logo {
@@ -135,16 +153,29 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     padding: 0;
     cursor: pointer;
+    position: relative;
 }
 
-.basket img:hover {
-    width: 80%;
-    height: 80%;
+.basket__ballon {
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    background:#FC5468;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
 }
 
 .wrap {
     display: flex;
     justify-content: space-between;
+    height: 44px;
 }
 
 .burger {
@@ -162,13 +193,26 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+.burger__btn .line::before{
+    transition: all 0.8s ease;
+}
+
 .burger__btn.cross .line::before{
-    display: none;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.burger__btn .line{
+    transition: all 0.5s ease;
 }
 
 .burger__btn.cross .line{
     transition: all 0.5s ease;
     transform: rotate(45deg);
+}
+
+.burger__btn .line::after{
+    transition: all 0.5s ease;
 }
 
 .burger__btn.cross .line::after{
@@ -212,6 +256,29 @@ nav.menu-collapse {
     display: block;
 }
 
+.menu__item {
+    transition: all 0.5s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.menu__item:hover {
+    border-bottom: 1px solid #F6F6F8;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    line-height: 27px;
+    margin-left: -5px;
+    transition: all 0.5s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu.menu-opened {
     position: absolute;
     top: 100%;
@@ -225,23 +292,6 @@ nav.menu-collapse {
     margin: 0;
 }
 
-.menu.menu-opened .menu__item a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
-    padding: 5px 0;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 480px;
-    margin-top: 9px;
-    line-height: 27px;
-    margin-left: -5px;
-}
-
 .menu__item_17 {
     font-size: 17px;
 }
@@ -250,8 +300,14 @@ nav.menu-collapse {
     font-size: 18px;
 }
 
+/* ------ Second section ------ */
+
+.sticky-scroll {
+    margin-top: 105px;
+} 
+
 .main {
-    padding-top: 150px;
+    padding: 150px 0 115px;
     background: #23233B;
     color: #F6F6F8;
 }
@@ -272,21 +328,12 @@ nav.menu-collapse {
 }
 
 .feature {
+    position: relative;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 20.8px;
     margin-top: -5px;
     letter-spacing: 0.06em;
-}
-
-.feature::after {
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #57D9A6;
-    position: absolute;
-    top: 3.2%;
-    left: 0%;
 }
 
 .info__title {
@@ -303,11 +350,11 @@ nav.menu-collapse {
 .name {
     font-size: 17px;
     color: #B2B2BF;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
 }
 
 .info__btn {
-    padding: 16px 25px;
+    padding: 16px 26px;
 }
 
 .right-side {
@@ -332,8 +379,8 @@ nav.menu-collapse {
 
 .petal-1 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 14.8%;
+    height: 14.8%;
     left: 44.7%;
     top: -6.6%;
     background: #57D9A6;
@@ -344,10 +391,10 @@ nav.menu-collapse {
 
 .petal-2 {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 22.3%;
+    height: 22.3%;
     left: 65%;
-    top: -6%;
+    top: -5.8%;
     background: #57D9A6;
     box-shadow: 14px 14px 20px rgba(28, 28, 51, 0.5);
     border-radius: 999px 56px 999px 999px;
@@ -356,8 +403,8 @@ nav.menu-collapse {
 
 .petal-3 {
     position: absolute;
-    width: 375px;
-    height: 375px;
+    width: 55.8%;
+    height: 55.2%;
     left: 46.8%;
     top: 31.3%;
     background: #57D9A6;
@@ -366,7 +413,7 @@ nav.menu-collapse {
     z-index: 2;
 }
 
-/* ------ Second section ------ */
+/* ------ Third section ------ */
 
 .courses {
     background: #23233B;
@@ -382,18 +429,9 @@ nav.menu-collapse {
 }
 
 .review__title {
+    position: relative;
     line-height: 52.8px;
     margin-bottom: 68px;
-}
-
-.review::after {
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #57D9A6;
-    position: absolute;
-    top: 16.8%;
-    left: 38.8%;
 }
 
 .review__text {
@@ -403,7 +441,7 @@ nav.menu-collapse {
 }
 
 .review__btn {
-    padding: 16px 26px;
+    padding: 16px 27px;
     margin-bottom: 80px;
 }
 
@@ -464,7 +502,7 @@ nav.menu-collapse {
     border-bottom: 1px solid #57D9A6;;
 }
 
-/* ------ Third section ------ */
+/* ------ Fourth section ------ */
 
 .contact-us {
     background: #1C1C33;
@@ -480,17 +518,12 @@ nav.menu-collapse {
 }
 
 .recommend__title {
+    position: relative;
     margin-bottom: 68px;
 }
 
-.recommend::after {
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #57D9A6;
-    position: absolute;
-    top: 39.8%;
-    left: 7%;
+.recommend__title::after {
+    bottom: -17%;
 }
 
 .recommend__text {
@@ -503,7 +536,7 @@ nav.menu-collapse {
     padding: 16px 27px;
 }
 
-/* ------ Fourth section ------ */
+/* ------ Fifth section ------ */
 
 .workshops {
     padding: 142px 0 145px;
@@ -518,17 +551,8 @@ nav.menu-collapse {
     position: relative;
 }
 
-.workshop::after {
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #57D9A6;
-    position: absolute;
-    top: 21%;
-    left: 38.5%;
-}
-
 .workshop__title {
+    position: relative;
     text-align: center;
     color: #1C1C33;
     margin-bottom: 69px;
@@ -571,7 +595,7 @@ nav.menu-collapse {
     margin-bottom: 26px;
 }
 
-/* ------ Fifth section ------ */
+/* ------ Sixth section ------ */
 
 .comment {
     background: #57D9A6;
@@ -663,7 +687,7 @@ cite {
 
 .teaching {
     background: #1C1C33;
-    padding: 135px 0 88px;
+    padding: 136px 0 88px;
     position: relative;
 }
 
@@ -694,8 +718,8 @@ cite {
 
 .petal-4 {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    width: 17%;
+    height: 17%;
     left: 13%;
     top: -4.5%;
     background: #57D9A6;
@@ -706,8 +730,8 @@ cite {
 
 .petal-5 {
     position: absolute;
-    height: 120px;
-    width: 120px;
+    width: 20.2%;
+    height: 20.2%;
     left: -1.2%;
     top: 3%;
     background: #57D9A6;
@@ -718,8 +742,8 @@ cite {
 
 .petal-6 {
     position: absolute;
-    height: 375px;
-    width: 375px;
+    height: 63%;
+    width: 63.2%;
     left: 36.4%;
     top: 37.2%;
     background: #57D9A6;
@@ -735,18 +759,9 @@ cite {
 }
 
 .about__title {
+    position: relative;
     color: #F6F6F8;
     margin-bottom: 69px;
-}
-
-.about::after {
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #57D9A6;
-    position: absolute;
-    top: 14.8%;
-    left: 0%;
 }
 
 .about__text {
@@ -757,10 +772,10 @@ cite {
 }
 
 .about__btn {
-    padding: 16px 28px;
+    padding: 16px 27px;
 }
 
-/* ------ Sixth section ------ */
+/* ------ Seventh section ------ */
 
 .articles {
     padding: 142px 0 278px;
@@ -774,18 +789,9 @@ cite {
 }
 
 .project__title {
+    position: relative;
     margin-bottom: 69px;
     color:#1C1C33;
-}
-
-.project::after {
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #57D9A6;
-    position: absolute;
-    top: 16.8%;
-    left: 46%;
 }
 
 .project__text {
@@ -799,7 +805,7 @@ cite {
 
 .project__btn {
     margin-bottom: 81px;
-    padding: 16px 26px;
+    padding: 16px 27px;
 }
 
 .coaching {
@@ -840,7 +846,7 @@ cite {
     color: #4E4E65;
 }
 
-/* ------ Seventh section ------ */
+/* ------ Eighth section ------ */
 
 .guide {
     background: #1C1C33;
@@ -884,7 +890,7 @@ cite {
     color:#1C1C33;
     font-size: 20px;
     font-weight: 700;
-    margin-right: 12px;
+    margin-right: 13px;
     line-height: 52.8px;
 }
 
@@ -908,13 +914,14 @@ cite {
     background: #1C1C33;
     color: #57D9A6;
     border: none;
-    padding: 20px 24px 19px;
+    padding: 20px 23px 19px;
     border-radius: 4px;
     border: 2px solid transparent;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .form__btn:hover {
@@ -995,7 +1002,7 @@ cite {
     margin-right: 16px;
 }
 
-/* ------ Eighth section ------ */
+/* ------ Ninth section ------ */
 
 .footer {
     padding: 16px 0;
