@@ -99,11 +99,8 @@
     .container {
         max-width: 940px;
     }
-    .header {
-        padding-bottom: 70px;
-    }   
     .main {
-        padding-top: 110px;
+        padding: 110px 0 70px;
     }
     .info {
         flex-direction: column;
@@ -188,11 +185,8 @@
     h2 {
         font-size: 32px;
     }
-    .header {
-        padding-bottom: 40px;
-    }
     .main {
-        padding-top: 100px;
+        padding: 100px 0 40px;
     }
     .burger {
         display: block;
@@ -301,18 +295,8 @@
         order: -1;
     }
     .right-side {
-        margin-top: 70px;
-    }
-    .image {
-        display: none;
-    }
-    .mobile-1 {
-        display: block;
-        width: 100%;
-    }
-    .mobile-2 {
-        display: block;
-        width: 100%;
+        margin-top: 90px;
+        width: 520px;
     }
     .teaching {
         padding: 70px 0 60px;
@@ -356,6 +340,9 @@
 @media screen and (max-width: 575px) {
     .body {
         font-size: 14px;
+    }
+    .right-side {
+        width: 90%;
     }
     .container {
         width: 90%;
